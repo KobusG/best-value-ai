@@ -1,25 +1,25 @@
 # LLM Value Calculator
 
-> Quality-adjusted tokens per dollar across local hardware, subscription plans, and API pricing for 37+ large language models. Unlike provider-published pricing, subscription token limits are empirically measured by running standardized tasks through Codex CLI and Claude Code and reading quota deltas before and after. All three access modes (local, subscription, API) are expressed on the same scale and directly comparable. Last updated: 2026-05-05.
+> Quality-adjusted tokens per dollar across local hardware, subscription plans, and API pricing for 44+ large language models. Unlike provider-published pricing, subscription token limits are empirically measured by running standardized tasks through Codex CLI and Claude Code and reading quota deltas before and after. All three access modes (local, subscription, API) are expressed on the same scale and directly comparable. Last updated: 2026-07-25.
 
 ## Current winners
 
-- **Best subscription**: GPT-5.4 (xhigh) via ChatGPT Pro $200 · $200/mo · 📐 est. — 49.1M tok/$
-- **Best API**: GLM-4.7 Flash — 2.8M tok/$ at $0.15/M blended
-- **Best local**: Qwen3.5 35B A3B (Reasoning) on 122 tok/s · RTX 4090 — 2.0M tok/$
+- **Best subscription**: GPT-5.4 (xhigh) via ChatGPT Pro $200 · $200/mo · 📐 est. — 45.0M tok/$
+- **Best API**: DeepSeek V4 Flash (Reasoning, Max Effort) — 3.2M tok/$ at $0.18/M blended
+- **Best local**: Qwen3.5 35B A3B (Reasoning) on 122 tok/s · RTX 4090 — 1.9M tok/$
 
 ## Top 10 models by quality-adjusted value per dollar
 
-1. **GPT-5.4 (xhigh)** (Subscription) — 49.1M tok/$ · ChatGPT Pro $200 · $200/mo · 📐 est.
-2. **GPT-5.2** (Subscription) — 43.9M tok/$ · ChatGPT Pro $200 · $200/mo · 📐 est.
-3. **GPT-5.2 Codex (xhigh)** (Subscription) — 39.4M tok/$ · ChatGPT Pro $200 · $200/mo · 📐 est.
-4. **GPT-4o** (Subscription) — 29.7M tok/$ · ChatGPT Pro $200 · $200/mo · 📐 est.
-5. **GPT-5.4 (xhigh)** (Subscription) — 24.5M tok/$ · ChatGPT Plus · $20/mo
-6. **GPT-5.4 (xhigh)** (Subscription) — 24.5M tok/$ · ChatGPT Pro $100 · $100/mo · 📐 est.
-7. **GPT-5.2** (Subscription) — 22.0M tok/$ · ChatGPT Plus · $20/mo
-8. **GPT-5.2** (Subscription) — 22.0M tok/$ · ChatGPT Pro $100 · $100/mo · 📐 est.
-9. **GPT-5.2 Codex (xhigh)** (Subscription) — 19.7M tok/$ · ChatGPT Plus · $20/mo
-10. **GPT-5.2 Codex (xhigh)** (Subscription) — 19.7M tok/$ · ChatGPT Pro $100 · $100/mo · 📐 est.
+1. **GPT-5.4 (xhigh)** (Subscription) — 45.0M tok/$ · ChatGPT Pro $200 · $200/mo · 📐 est.
+2. **GPT-5.2** (Subscription) — 42.7M tok/$ · ChatGPT Pro $200 · $200/mo · 📐 est.
+3. **GPT-5.2 Codex (xhigh)** (Subscription) — 38.1M tok/$ · ChatGPT Pro $200 · $200/mo · 📐 est.
+4. **GPT-4o** (Subscription) — 28.2M tok/$ · ChatGPT Pro $200 · $200/mo · 📐 est.
+5. **GPT-5.4 (xhigh)** (Subscription) — 22.5M tok/$ · ChatGPT Plus · $20/mo
+6. **GPT-5.4 (xhigh)** (Subscription) — 22.5M tok/$ · ChatGPT Pro $100 · $100/mo · 📐 est.
+7. **GPT-5.2** (Subscription) — 21.4M tok/$ · ChatGPT Plus · $20/mo
+8. **GPT-5.2** (Subscription) — 21.4M tok/$ · ChatGPT Pro $100 · $100/mo · 📐 est.
+9. **GPT-5.2 Codex (xhigh)** (Subscription) — 19.1M tok/$ · ChatGPT Plus · $20/mo
+10. **GPT-5.2 Codex (xhigh)** (Subscription) — 19.1M tok/$ · ChatGPT Pro $100 · $100/mo · 📐 est.
 
 ## Empirical subscription measurements
 
@@ -62,7 +62,7 @@ Quality is a z-score normalized blend of three public benchmarks: Arena text ELO
 
 ## Data files (JSON, Apache 2.0 licensed — free to use)
 
-- [models.json](https://github.com/desktop-commander/best-value-ai/blob/master/data/models.json): All 37 models with benchmarks, API pricing, local performance, subscription data
+- [models.json](https://github.com/desktop-commander/best-value-ai/blob/master/data/models.json): All 44 models with benchmarks, API pricing, local performance, subscription data
 - [hardware.json](https://github.com/desktop-commander/best-value-ai/blob/master/data/hardware.json): Hardware configurations with prices and VRAM specs
 - [benchmarks.json](https://github.com/desktop-commander/best-value-ai/blob/master/data/benchmarks.json): Quality benchmark scores used for z-score normalization
 - [measurements/](https://github.com/desktop-commander/best-value-ai/tree/master/measurements): Raw JSON output from each Codex CLI or Claude Code measurement run
